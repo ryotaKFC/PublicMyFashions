@@ -1,0 +1,133 @@
+/* 日本語フォント */
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Zen+Maru+Gothic&display=swap');
+/* 英語フォント */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+body{
+    margin: 0;
+    font-family: 'Itim', 'Zen Maru Gothic', sans-serif;
+}
+header {
+  height: 100px; 
+  padding: 0 10px;
+  border-bottom: 1px solid #ccc; 
+  background-color: #d0ffe0;
+  color: #ffffff;
+  display: flex;
+  text-align: center;
+}
+a:link{
+   color:#0e4a12;
+}
+:visited{
+    color:#0e4a12 ;
+}
+#menu-btn {
+  font-size: 4.3rem;
+  padding: 2px 6px;
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px; 
+  border-radius: 1px;       
+  cursor: pointer;
+}
+.header-left {
+  font-size: 2rem;
+   flex:.5;
+   position: relative;
+   top: 5px; 
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+#side-menu {
+        position: fixed;
+        top: 0;
+        left: -200px; /* 最初は隠す */
+        width: 150px;
+        height: 100%;
+        background: #222;
+        overflow-y: auto;
+        transition: left 0.3s ease;
+        z-index: 1000;
+        padding: 20px;
+    }
+#side-menu a, #side-menu button {
+        color: rgb(145, 238, 208);
+        text-decoration: none;
+        background: none;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+    }
+#logout-btn{
+  text-align: center;
+}    
+.header-center {
+  font-size: 1.3rem;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#menu-btn:hover {
+        color: #777(0, 0, 0, 0.4);
+    }
+#side-menu li a:hover,
+#side-menu li button:hover{
+        color: #777(255, 255, 255, 0.4);
+    }
+#logout-btn {
+        color: rgb(255, 255, 255);
+        position: fixed;
+        bottom: 0;
+        padding-bottom: 40px;
+    }
+    /* メニューを表示 */
+#side-menu.open {
+        left: 0;
+    }
+
+#side-menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+#side-menu li {
+        margin-bottom: 15px;
+    }
+a:hover {
+	color: #777;
+}
+
+#create-button {
+  text-align: center;  /* これが親要素の中央寄せ */
+}
+
+#create-button a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0e4a12;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+#create-button a:hover {
+  background-color:#777 ; /* ホバー時の色 */
+}
+.page-header{
+  text-align: center;
+   color:#000000;
+}
+.your-name{
+  text-align: center;
+  color:#000000;
+}
+footer {
+    padding: 30px;
+    text-align: center;
+    font-size: .9rem;
+    color: #777;
+}
